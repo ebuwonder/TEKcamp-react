@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,39 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.app {
+  background: rgb(99, 99, 136);
+  height: 100vh;
+  padding: 30px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.todo-list {
+  margin: auto;
+  background: grey;
+  border-radius: 4px;
+  max-width: 400px;
+  padding: 5px;
+}
+
+.todo {
+  align-items: center;
+  background: white;
+  border-radius: 3px;
+  box-shadow: #282c34;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 3px 10px;
+}
+
+.todo:hover {
+  background-color: rgb(126, 102, 102);
 }
