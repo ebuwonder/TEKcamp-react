@@ -30,6 +30,7 @@ function App() {
     <div className="app">
       <div><h1 className="title">Todo List</h1></div>
       <div className="todo-list">
+        <TodoForm addTodo={addTodo} />
         {todos.map((todo, index) => (
           <Todo
             key={index}
@@ -40,7 +41,7 @@ function App() {
           />
         ))}
 
-        <TodoForm addTodo={addTodo} />
+
       </div>
     </div>
   );
