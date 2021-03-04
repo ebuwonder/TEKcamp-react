@@ -1,11 +1,19 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Todo(props) {
+function Todo({ todo, index, completeTodo, removeTodo }) {
+
     return (
-        <div>
-            {props.item}
+        <div className="todo"
+            style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+        >
+            {todo.text}
+            <div>
+                <button onClick={() => completeTodo(index)}>Done</button>
+                <button onClick={() => removeTodo(index)}>X</button>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Todo;
